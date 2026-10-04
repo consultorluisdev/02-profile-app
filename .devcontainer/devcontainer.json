@@ -1,0 +1,17 @@
+{
+  "name": "LAB RN 02 Profile App",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "forwardPorts": [8081, 19000, 19001, 19006],
+  "portsAttributes": {
+    "8081": { "label": "Metro", "onAutoForward": "notify" },
+    "19000": { "label": "Expo",
+      "onAutoForward": "notify" },
+    "19006": { "label": "Expo Web", "onAutoForward": "openPreview" }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["expo.vscode-expo-tools"]
+    }
+  }
+}
