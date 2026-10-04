@@ -1,0 +1,15 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+  "tasks": {
+    "start": {
+      "name": "Expo Start",
+      "command": "npx expo start --tunnel",
+      "runAtStart": true
+    }
+  }
+}
